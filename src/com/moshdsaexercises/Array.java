@@ -51,9 +51,9 @@ public class Array {
         int maxItem = 0;
 
         // runtime complexity of O(n)
-        for (int i = 0; i < count; i++) {
-            if(items[i] > maxItem)
-                maxItem = items[i];
+        for (int item : items) {
+            if(item > maxItem)
+                maxItem = item;
         }
 
         return maxItem;
