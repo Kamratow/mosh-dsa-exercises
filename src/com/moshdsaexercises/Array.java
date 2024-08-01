@@ -68,4 +68,14 @@ public class Array {
 
         return intersection;
     }
+
+    public void reverse() {
+        int[] reversed = new int[count];
+        int reversedIndex = 0;
+
+        for (int i = count -1; i >= 0; i--)
+            reversed[reversedIndex++] = items[i];
+
+        items = reversed;
+    }
 }

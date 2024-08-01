@@ -12,7 +12,7 @@ public class Main {
 //        numbers.removeAt(2);
         System.out.println("Index of 20: " + numbers.indexOf(20));
         System.out.println("Max item value: " + numbers.max());
-        System.out.println("Printing all items from array:");
+        System.out.println("Printing all items from numbers array:");
         numbers.print();
         numbers.removeAt(3);
         Array otherArray = new Array(5);
@@ -22,5 +22,8 @@ public class Main {
         otherArray.insert(70);
         System.out.println("Intersect of numbers and otherArray:");
         numbers.intersect(otherArray).print();
+        numbers.reverse();
+        System.out.println("Reversed numbers:");
+        numbers.print();
     }
 }
