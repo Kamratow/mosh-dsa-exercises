@@ -25,5 +25,8 @@ public class Main {
         numbers.reverse();
         System.out.println("Reversed numbers:");
         numbers.print();
+        numbers.insertAt(25, 2);
+        System.out.println("Numbers with 25 inserted at 2 index position:");
+        numbers.print();
     }
 }
