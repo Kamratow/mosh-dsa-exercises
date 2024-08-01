@@ -14,17 +14,19 @@ public class Array {
     }
 
     public void insert(int item) {
-        count+= 1;
-        int[] newItems = new int[count];
+        // If the array is full, resize it
+        if (items.length == count) {
+            // Create a new array (twice the size)
+            int[] newItems = new int[count * 2];
 
-        for(int i = 0; i < count; i++) {
-            if(i != count - 1) {
+            // Copy all the existing items
+            for (int i = 0; i < count; i++)
                 newItems[i] = items[i];
-            }
 
-            newItems[i] = item;
+            items = newItems;
         }
 
-        items = newItems;
+        // Add the new item at the end
+        items[count++] = item;
     }
 }
