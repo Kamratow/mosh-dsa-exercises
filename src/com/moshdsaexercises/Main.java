@@ -14,5 +14,6 @@ public class Main {
         System.out.println("Max item value: " + numbers.max());
         System.out.println("Printing all items from array:");
         numbers.print();
+        numbers.removeAt(3);
     }
 }
