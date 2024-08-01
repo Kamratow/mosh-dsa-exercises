@@ -70,12 +70,11 @@ public class Array {
     }
 
     public void reverse() {
-        int[] reversed = new int[count];
-        int reversedIndex = 0;
+        int[] newItems = new int[count];
 
-        for (int i = count -1; i >= 0; i--)
-            reversed[reversedIndex++] = items[i];
+        for (int i = 0; i < count; i++)
+            newItems[i] = items[count - i - 1];
 
-        items = reversed;
+        items = newItems;
     }
 }
