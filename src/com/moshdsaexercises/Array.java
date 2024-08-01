@@ -58,4 +58,14 @@ public class Array {
 
         return maxItem;
     }
+
+    public Array intersect(Array other) {
+        var intersection = new Array(count);
+
+        for (int item : items)
+            if(other.indexOf(item) >= 0)
+                intersection.insert(item);
+
+        return intersection;
+    }
 }

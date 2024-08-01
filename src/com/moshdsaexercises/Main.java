@@ -15,5 +15,12 @@ public class Main {
         System.out.println("Printing all items from array:");
         numbers.print();
         numbers.removeAt(3);
+        Array otherArray = new Array(5);
+        otherArray.insert(30);
+        otherArray.insert(60);
+        otherArray.insert(50);
+        otherArray.insert(70);
+        System.out.println("Intersect of numbers and otherArray:");
+        numbers.intersect(otherArray).print();
     }
 }
