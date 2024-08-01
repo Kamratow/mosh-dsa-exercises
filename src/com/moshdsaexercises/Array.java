@@ -27,6 +27,7 @@ public class Array {
     }
 
     public void insert(int item) {
+        // runtime complexity of O(n)
         resizeIfRequired();
 
         // Add the new item at the end
@@ -34,6 +35,7 @@ public class Array {
     }
 
     public void removeAt(int index) {
+        // runtime complexity of O(n)
         if(index <0 || index >= count)
             throw new IllegalArgumentException();
 
@@ -52,6 +54,7 @@ public class Array {
     }
 
     public int max() {
+        // runtime complexity of O(n)
         int maxItem = 0;
 
         // runtime complexity of O(n)
@@ -64,6 +67,7 @@ public class Array {
     }
 
     public Array intersect(Array other) {
+        // runtime complexity of O(n)
         var intersection = new Array(count);
 
         for (int item : items)
@@ -74,6 +78,7 @@ public class Array {
     }
 
     public void reverse() {
+        // runtime complexity of O(n)
         int[] newItems = new int[count];
 
         for (int i = 0; i < count; i++)
@@ -83,6 +88,7 @@ public class Array {
     }
 
     public void insertAt(int item, int index) {
+        // runtime complexity of O(n)
         if(index < 0 || index > count)
             throw new IllegalArgumentException();
 
